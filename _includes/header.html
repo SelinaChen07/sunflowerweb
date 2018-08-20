@@ -1,0 +1,55 @@
+<header>
+
+	<nav class="navbar navbar-expand-xl navbar-light px-0 pt-0 pb-2 bg_gradient">
+		
+
+			<!-- logo -->
+				<a hreflang="en" class="navbar-brand ml-xl-5 pl-xl-5 ml-3 pl-3 py-0" href="{{"/" | relative_url }}">
+					<img src="{{"/assets/images/logoName.png" | relative_url }}" class="img-fluid p-0 h_5 w-auto" alt="Sunflower Web Logo">
+					
+				</a>
+
+				<!-- Toggler/collapsibe Button -->
+				<button class="navbar-toggler ml-4 mr-2" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+				    <span class="navbar-toggler-icon"></span>
+				</button>					
+			
+
+			<!-- Navbar links -->
+	  		<div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+				<ul class="navbar-nav  mr-lg-5 pr-lg-5 mr-3 ml-3 pl-3">
+					<li class="nav-item"><a hreflang="en" class="nav-link text-secondary {% if page.location == 'home' %} font-weight-bold {% endif %}" href="{{"/" | relative_url }}">HOME</a></li>					
+					<li class="nav-item dropdown">
+						<a hreflang="en" class="nav-link dropdown-toggle text-secondary {% if page.title == 'Services' %} font-weight-bold {% endif %}" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">SERVICES</a>
+					    <div class="dropdown-menu">
+					    	{% for service in site.data.services %}
+					    		 <a hreflang="en" class="dropdown-item overflow_wrap border" href="{{service.permalink | relative_url }}">{{service.title}}</a>
+					    	{% endfor %}
+					    <!--
+					      <a hreflang="en" class="dropdown-item" href="#">Action</a>
+					      <a hreflang="en" class="dropdown-item" href="#">Another action</a>
+					      <a hreflang="en" class="dropdown-item" href="#">Something else here</a>
+					      <div class="dropdown-divider"></div>
+					      <a hreflang="en" class="dropdown-item" href="#">Separated link</a>
+					      -->
+					    </div>
+					</li>
+					<li class="nav-item"><a hreflang="en" class="nav-link text-secondary {% if page.title == 'About' %} font-weight-bold {% endif %}" href="{{"/about" | relative_url }}">ABOUT</a></li>					
+					<!--
+					<li class="nav-item"><a hreflang="en" class="nav-link text-secondary {% if page.title == 'Testimonials' %} font-weight-bold {% endif %}" href="{{"/testimonials" | relative_url }}">TESTIMONIALS</a></li>
+					-->
+					<li class="nav-item mr-2"><a hreflang="en" class="nav-link text-secondary {% if page.title == 'Products' %} font-weight-bold {% endif %}" href="{{"/packages" | relative_url }}">PACKAGES</a></li>
+					<!--
+					<li class="nav-item mr-2"><a hreflang="en" class="nav-link text-secondary {% if page.title == 'Gallery' %} font-weight-bold {% endif %}" href="{{"/gallery" | relative_url }}">GALLERY</a></li>
+					-->
+					<li class="nav-item"><a hreflang="en" class="nav-link text-secondary {% if page.title == 'Contact' %} font-weight-bold {% endif %}" href="{{"/contact" | relative_url }}">CONTACT</a></li>
+					<!--		
+					<li class="nav-item"><a hreflang="en" class="nav-link text-primary lead font-weight-bold" href="tel:0298886454"><ion-icon class="icon_navbar pr-2" name="call"></ion-icon>02 9888 8888</a></li>
+					-->
+				</ul>
+			</div>
+
+		
+	</nav>
+
+</header>

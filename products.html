@@ -1,0 +1,55 @@
+---
+title: "Products"
+layout: "wrapper"
+description: TP Roofing provide only premium roofing products for all roofing works. Our expert roof advice will assist you in deciding what materials will best suit your roof needs.
+canonical_url: "https://www.tproofing.com.au/products"
+---
+
+<main class="container p-5" id="product_list">
+      <div class="row d-flex justify-content-center">
+        <header class="pb-3 col-lg-8 col-xl-8 col-10 text-center">
+          <h2 class="mb-2 font-weight-bold">Our Products</h2>
+          <p class="text-muted"> TP Roofing partners with leading industry suppliers to provide only premium roofing products for all your roofing needs. Our expert roofing advice will assist you in deciding what materials will best suit your needs. </p>
+        </header>
+      </div>
+
+      <div class="row">
+          {% for product in site.data.products %}
+            <div class="col-lg-4 col-md-6 col-12 d-flex align-self-stretch my-3">
+              <div class="bg-light border p-3 text-center">
+                  <!-- Trigger the Modal -->
+                  <img id="" src="{{product.image|relative_url}}" alt="TP Roofing - {{product.type}} Product" class="img_for_modal card-img-top w_85">                  
+                <!--
+                <a hreflang="en" href="#{{product.type}}"><img src="{{product.image|relative_url}}" class="card-img-top w_85" alt="{{product.type}}"></a>
+                -->
+                <div class="card-body">
+                  <h4 class="card-title"><a hreflang="en" href="#{{product.type}}">{{product.type}}</a></h4>
+                  <p class="card-text">{{product.shortdes}}</p>
+                  <p class=""><a hreflang="en" href="#{{product.type}}">More on {{product.type}} >> </a></p>
+                </div>           
+              </div>
+            </div>
+          {% endfor %}
+      </div>
+
+      <!-- The Modal -->
+      <div id="myModal" class="modal">
+        <!-- The Close Button -->
+        <span class="close">&times;</span>
+        <!-- Modal Content (The Image) -->
+        <img class="modal-content" id="img01">
+        <!-- Modal Caption (Image Text) -->
+        <div id="caption"></div>
+      </div>
+      
+
+      <div class="my-3">
+        {% for product in site.data.products %}
+          <div class="border_bottom p-2" id="{{product.type}}">
+            <h4 class="text-primary font-weight-bold">{{product.type}}</h4>
+            <div>{{product.description}}</div>
+            <div class="text-right"><a hreflang="en" href="#product_list" class="text-muted">Back to Our Products</a></div>
+          </div>
+        {% endfor %}
+      </div>
+</main>
