@@ -1,11 +1,11 @@
 <footer>
-	<!-- Start Information Area -->
-	<section class="p-5 bg_gradient text-secondary row">
+	<!-- Start Information Area 
+	<section class="p-5 bg_lightgrey text-dark row">
 			
 			<div class="col-md-12 col-lg-4">					
-				<h3 class="font-weight-bold"><span class="text_purple">SUNFLOWER </span><span class="text_green">WEB</span></h3>
+				<h4 class="font-weight-bold"><span class="">SUNFLOWER </span><span class="">WEB</span></h4>
 				<ul class="list-unstyled text-left">
-					<li class="h_5">
+					<li class="h_3">
 						<img src="{{"/assets/images/logo.png" | relative_url }}" id="logo" class="img-fluid p-1 h-100 w-auto" alt="Sunflower Web Logo">
 					</li>
 				
@@ -16,44 +16,44 @@
 			</div>
 
 			<div class="col-md-6 col-lg-4">					
-				<h3 class="font-weight-bold">USEFUL LINKS</h3>
+				<h4 class="font-weight-bold">USEFUL LINKS</h4>
 				<ul class="list-unstyled text-left">
-					<li><a hreflang="en" class="text-secondary" href="{{"/about" | relative_url }}">> About us</a></li>
+					<li><a hreflang="en" class="text-dark" href="{{"/about" | relative_url }}">> About us</a></li>
 					{% for service in site.data.services %}
-			    		<li><a hreflang="en" class="text-secondary" href="{{service.permalink | relative_url }}">> {{service.title}}</a></li>
+			    		<li><a hreflang="en" class="text-dark" href="{{service.permalink | relative_url }}">> {{service.title}}</a></li>
 					{% endfor %}
-					<li><a hreflang="en" class="text-secondary" href="{{"/testimonials" | relative_url }}">> Testimonials</a></li>
-					<li><a hreflang="en" class="text-secondary" href="{{"/products" | relative_url }}">> Our products</a></li>
-					<li><a hreflang="en" class="text-secondary" href="{{"/contact" | relative_url }}">> Get a free quote</a></li>
+					<li><a hreflang="en" class="text-dark" href="{{"/testimonials" | relative_url }}">> Testimonials</a></li>
+					<li><a hreflang="en" class="text-dark" href="{{"/products" | relative_url }}">> Our products</a></li>
+					<li><a hreflang="en" class="text-dark" href="{{"/contact" | relative_url }}">> Get a free quote</a></li>
 					
 				</ul>
 			</div>
 			
 			<div class="col-md-6 col-lg-4">
-				<h3 class="font-weight-bold">CONTACT US</h3>				
+				<h4 class="font-weight-bold">CONTACT US</h4>				
 				<ul class="list-unstyled text-left">
 					<li>Phone: 02 9888 6454</li>
 					<li>Fax: &nbsp&nbsp02 9888 6454</li>
-					<li><a hreflang="en" href="{{"/contact" | relative_url }}" class="text-secondary">Email: tp@tproofing.com.au</a></li>
+					<li><a hreflang="en" href="{{"/contact" | relative_url }}" class="text-dark">Email: tp@tproofing.com.au</a></li>
 					<li>Mail: &nbspPO Box 1074, Lane Cove NSW 1595</li>							
 				</ul>			
 			</div>
 
 			<!--
 			<div class="col-md-6 col-lg-3">
-				<h3 class="font-weight-bold">GALLERY</h3>				
+				<h4 class="font-weight-bold">GALLERY</h4>				
 				<div>
 					{% for photo in site.data.gallery_footer %}						
 						<a hreflang="en" href="{{"/gallery" | relative_url }}"><img src="{{photo.address|relative_url}}" alt="{{photo.title}}" class="img-fluid m-1 max_width_5"></a>				
 					{% endfor %}				
-					<a hreflang="en" class="text-secondary btn btn-dark" href="{{"/gallery" | relative_url }}">More Photos >></a>			
+					<a hreflang="en" class="text-dark btn btn-dark" href="{{"/gallery" | relative_url }}">More Photos >></a>			
 				</div>							
 			</div>
-			-->
+			
 	</section>
-	<!-- End Information Area -->
+	-->
 
-	<section class="navbar bg-secondary text-white ">
+	<section class="navbar bg_lightgrey text-secondary ">
 		
 			<small id="copyright">&copy;Copyright | {{ site.title}} All rights reserved. </small>
 	</section>

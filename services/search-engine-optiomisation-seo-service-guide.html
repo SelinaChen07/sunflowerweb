@@ -1,0 +1,38 @@
+---
+title: "Search Engine Optiomisation (SEO) Service Guide"
+layout: "service"
+permalink: /services/search-engine-optiomisation-seo-service-guide
+description: TP Roofing provide only premium roofing products for all roofing works. Our expert roof advice will assist you in deciding what materials will best suit your roof needs.
+permalink: /services/search-engine-optiomisation-for-small-business
+canonical_url: "https://www.sunflowerweb.com.au/search-engine-optiomisation-for-small-business"
+---
+
+<!-- Cover photo Area -->
+ <section class="py-5" >
+      <div class="container">
+      <div class="row d-flex justify-content-center">
+        <header class="pb-3 col-lg-8 col-xl-6 col-10 text-center">
+          <h2 class="mb-2 font-weight-bold">Search Engineer Optimisation (SEO) Service for Small Business</h2>
+          <p class="text-purple"> What we focus is the build up of your business and your continuous success online. Our SEO best practice will stand the test of time.</br>
+        </header>
+      </div>
+
+        <div class="row">
+        	{% for service in site.data.services %}
+        		<div class="col-lg-4 col-12 ">
+	        		<div class="d-flex flex-row">
+			            <div class="icon_home_service pr-3"><ion-icon name="{{service.icon}}"></ion-icon></div>
+			            <div>
+				            <h5 class="font-weight-bold">{{service.capitalname}}</h5>
+				            <p class="description">{{service.shortdes}}</p>
+				            <p><a hreflang="en" href="{{service.permalink | relative_url }}" class="btn btn-dark">{{service.more}} >></a>
+				            </p>
+			            </div>
+		            </div>	            
+	          </div>
+        	{% endfor %}
+        </div>
+
+      </div>
+ </section>
+<!-- End Services Area -->

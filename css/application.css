@@ -1,27 +1,49 @@
 ---
 ---
 
+/* Layout */
+
+body{
+  padding-top: 6em;
+}
+
+.pt_space{
+  padding-top: 4em;
+}
+
 .bg_orange{
   background-color: #f7941e;
  
 }
 
+.bg_lightgrey{
+  background-color: #D3D3D3;
+ 
+}
+
 .bg_gradient{
-  background-color: #f7941e;
-  background: linear-gradient(to right, #FFFFFF, #f7941e);
+  background-color: #FFFFFF;
+   background: linear-gradient(#D3D3D3, #FFFFFF); 
+  /*  background: linear-gradient(to right, #FFFFFF, #008000); 
+   /*background: linear-gradient(to right, #FFFFFF, #f7941e);*/
   
 }
 
-.bg_purple{
-  background-color: #9370DB;
+.bg_orange_gradient{
+  background: linear-gradient(to right, #ffffff, #98FB98);
+}
+
+#bg_img_seo{
+  background: white url("{{"/assets/images/seo.png"|relative_url}}") 70% 60% no-repeat;
+  background-size: auto 70%;
+}
+
+.nav-item :hover{
+  background-color: #f8f9fa;
 }
 
 .text_orange{
   color: #f7941e;
-}
-
-.text_purple{
-  color: #9370DB;
 }
 
 .text_green{
@@ -29,8 +51,23 @@
 
 }
 
+.py_01{
+  padding-top: 0.1em;
+  padding-bottom: 0.1em;
+}
+
+.h_1{
+  height: 1em;
+  width: 100%;
+}
+
+.h_2{
+  height: 2.5em;
+  width: auto;
+}
+
 .h_3{
-  height: 3em;
+  height: 3.5em;
   width: auto;
 }
 
@@ -84,10 +121,10 @@ body, html {
 
 .cover_photo {
     /* The image used */
-    background-image: url("{{"/assets/images/cover_photo.jpg"|relative_url}}");
+    background-image: url("{{"/assets/images/fairywheel.jpeg"|relative_url}}");
 
     /* Full height */
-    height: 85%; 
+    height: 90%; 
     min-height: 420px;
 
     /* Center and scale the image nicely */
@@ -97,7 +134,7 @@ body, html {
 }
 
 .cover_title{
-  max-width: 42em;
+  max-width: 60em;
 }
 
 .w_85{
@@ -146,6 +183,32 @@ body, html {
 .border_bottom{
   border-bottom: 1px solid #e7e6e6;
 }
+
+.disabled_link{
+  cursor: default;
+}
+/* End of Layout */
+
+
+
+/* ------------------ */
+/* Sidebar */
+/* ------------------ */
+/* The sidebar menu */
+.fixed_right{
+  position: fixed;
+  right:2em;
+  top:10em;
+  max-width: 20%;
+  padding-bottom: 5em;
+}
+  @media (min-width: 992px){ 
+    .main_content{ max-width: 70%;}
+}
+/* End of Sidebar */
+
+
+
 /*
 .tick:before
 {content:'\2713';
