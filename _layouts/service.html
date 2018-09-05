@@ -24,7 +24,7 @@ layout: "wrapper"
   <h4>Our Services</h4>
     <ol class="list-unstyled mb-2">
       {% for service in site.data.services %}
-        <li class="border-top p-2"><a hreflang="en" href="{{service.permalink | relative_url }}" class="{% if page.permalink == service.permalink %} font-weight-bold disabled_link {% endif %}">>{{service.linkname}}</a></li>
+        <li class="border-top p-2"><a hreflang="en" href="{{service.permalink | relative_url }}" class="text-success {% if page.permalink == service.permalink %} font-weight-bold disabled_link {% endif %}">{{service.linkname}}</a></li>
       {% endfor %}         
     </ol> 
 </div>
