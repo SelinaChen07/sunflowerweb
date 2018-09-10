@@ -34,11 +34,6 @@ body{
   background: linear-gradient(to right, #ffffff, #98FB98);
 }
 
-#bg_img_seo{
-  background: white url("{{"/assets/images/seo.png"|relative_url}}") 70% 60% no-repeat;
-  background-size: auto 70%;
-}
-
 .nav-item :hover{
   background-color: #f8f9fa;
 }
@@ -74,6 +69,12 @@ body{
 
 .h_5{
   max-height: 5em;
+  width: auto;
+  max-width: 100%;
+}
+
+.h_6{
+  max-height: 6em;
   width: auto;
   max-width: 100%;
 }
@@ -169,6 +170,14 @@ body, html {
 .disabled_link{
   cursor: default;
 }
+
+.li_a_text_success li a{
+  color: #28a745;
+}
+
+.li_a_text_black li a{
+  color: black;
+}
 /* End of Layout */
 
 /* Background Photos */
@@ -202,17 +211,55 @@ body, html {
     background-size: cover;
 }
 
-#time{
-    background-image: url("{{"/assets/images/clock.jpg"|relative_url}}");
+#bg_img_seo{
+  background: white url("{{"/assets/images/seo.png"|relative_url}}") 70% 60% no-repeat;
+  background-size: auto 60%;
+}
 
-    /* Full height */
-    height: 40%; 
-    min-height: 420px;
+.img_container{
+  position: relative;
+}
+
+#bg_img_webdesign:after{
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.2;
+
+    background-image: url("{{"/assets/images/big_20180908b.jpg"|relative_url}}");
 
     /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    opacity: 0.6;
+}
+#time{
+   height: 15em;
+}
+
+#time:after{
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.6;
+    background-image: url("{{"/assets/images/clock.jpg"|relative_url}}");   
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.6;
 
 }
 
