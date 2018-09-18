@@ -1,4 +1,9 @@
 
+//print button
+function printFunction() {
+    window.print();
+}
+
 $(document).ready(function(){
 
 	console.log("Hello World!");
@@ -9,6 +14,7 @@ $(document).ready(function(){
 			event.preventDefault();
 		});	
 	}
+
 
 	//stick footer to the bottom of window if the content is too short(it won't work if define body height 100%)
 	//if($('body').height() < window.innerHeight){
