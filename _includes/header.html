@@ -6,7 +6,7 @@
 			<!-- logo -->
 				<a hreflang="en" class="navbar-brand ml-xl-5 pl-xl-5 ml-3 pl-3 py_01" href="{{"/" | relative_url }}">
 					<img src="{{"/assets/images/logo.png" | relative_url }}" class="img-fluid p-0 h_2 w-auto" alt="Sunflower Web Logo">
-					<h4 class="d-sm-inline-block d-none ml-2 mt-2 font-weight-bold text-dark font-italic">Sunflower Web</h4>
+					<h4 class="d-inline-block ml-2 mt-2 font-weight-bold text-dark font-italic">Sunflower Web</h4>
 					
 				</a>
 
@@ -19,9 +19,9 @@
 			<!-- Navbar links -->
 	  		<div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
 				<ul class="navbar-nav  mr-lg-5 pr-lg-5 mr-3 ml-3 pl-3">
-					<li class="nav-item"><a hreflang="en" class="nav-link text-dark {% if page.location == 'home' %} font-weight-bold bg-warning rounded {% endif %}" href="{{"/" | relative_url }}">HOME</a></li>					
+					<li class="nav-item"><a hreflang="en" class="nav-link text-dark  pl-2{% if page.location == 'home' %} font-weight-bold bg-warning rounded {% endif %}" href="{{"/" | relative_url }}">HOME</a></li>					
 					<li class="nav-item dropdown">
-						<a hreflang="en" class="nav-link dropdown-toggle text-dark {% if page.layout == 'service' %} font-weight-bold bg-warning rounded {% endif %}" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">SERVICES</a>
+						<a hreflang="en" class="nav-link dropdown-toggle text-dark  pl-2 {% if page.layout == 'service' %} font-weight-bold bg-warning rounded {% endif %}" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">SERVICES</a>
 					    <div class="dropdown-menu">
 					    	{% for service in site.data.services %}
 					    		 <a hreflang="en" class="dropdown-item overflow_wrap border" href="{{service.permalink | relative_url }}">{{service.linkname}}</a>
@@ -35,15 +35,15 @@
 					      -->
 					    </div>
 					</li>
-					<li class="nav-item"><a hreflang="en" class="nav-link text-dark {% if page.title == 'About' %} font-weight-bold bg-warning rounded {% endif %}" href="{{"/about" | relative_url }}">ABOUT</a></li>					
+					<li class="nav-item"><a hreflang="en" class="nav-link text-dark  pl-2{% if page.title == 'About' %} font-weight-bold bg-warning rounded {% endif %}" href="{{"/about" | relative_url }}">ABOUT</a></li>					
 					<!--
 					<li class="nav-item"><a hreflang="en" class="nav-link text-dark {% if page.title == 'Testimonials' %} font-weight-bold bg-warning rounded {% endif %}" href="{{"/testimonials" | relative_url }}">TESTIMONIALS</a></li>
 					-->
-					<li class="nav-item mr-2"><a hreflang="en" class="nav-link text-dark {% if page.title == 'Products' %} font-weight-bold bg-warning rounded {% endif %}" href="{{"/packages" | relative_url }}">PACKAGES</a></li>
+					<li class="nav-item mr-2"><a hreflang="en" class="nav-link text-dark   pl-2{% if page.title == 'Products' %} font-weight-bold bg-warning rounded {% endif %}" href="{{"/packages" | relative_url }}">PACKAGES</a></li>
 					<!--
 					<li class="nav-item mr-2"><a hreflang="en" class="nav-link text-dark {% if page.title == 'Gallery' %} font-weight-bold bg-warning rounded {% endif %}" href="{{"/gallery" | relative_url }}">GALLERY</a></li>
 					-->
-					<li class="nav-item"><a hreflang="en" class="nav-link text-dark {% if page.title == 'Contact' %} font-weight-bold bg-warning rounded {% endif %}" href="{{"/contact" | relative_url }}">CONTACT</a></li>
+					<li class="nav-item"><a hreflang="en" class="nav-link text-dark   pl-2{% if page.title == 'Contact' %} font-weight-bold bg-warning rounded {% endif %}" href="{{"/contact" | relative_url }}">CONTACT</a></li>
 					<!--		
 					<li class="nav-item"><a hreflang="en" class="nav-link text-primary lead font-weight-bold" href="tel:0298886454"><ion-icon class="icon_navbar pr-2" name="call"></ion-icon>02 9888 8888</a></li>
 					-->
