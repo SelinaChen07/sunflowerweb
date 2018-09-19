@@ -20,6 +20,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 #baseurl: "/tproofing" # the subpath of your site, e.g. /blog
 baseurl: "/sunflowerweb"
 url: "https://www.sunflowerweb.com.au" # the base hostname & protocol for your site, e.g. http://example.com
+domain_name: "www.sunflowerweb.com.au"
 twitter_username: jekyllrb
 github_username:  jekyll
 
