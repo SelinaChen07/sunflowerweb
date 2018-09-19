@@ -1,5 +1,5 @@
 <footer>
-  {% if page.layout == 'service' %}
+  {% if page.layout == 'service' or page.title == 'About' %}
 	<section class="p-5 bg_orange text-center ">
 		<h3 class="font-weight-bold font-italic text-white">We are looking forward to working with you. </h3>
 	    <p>To see more details of our pricing, please go to <a href="{{"/packages" | relative_url }}" class="text-success font-weight-bold">Our Packages</a>.</p>

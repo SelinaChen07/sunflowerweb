@@ -241,13 +241,28 @@ body, html {
     background-size: cover;
 }
 
-#bg_img_seo{
-  background: white url("{{"/assets/images/seo.png"|relative_url}}") 70% 60% no-repeat;
-  background-size: auto 60%;
-}
 
 .img_container{
   position: relative;
+}
+
+#bg_img_seo:after{
+  content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.3;
+
+    background-image: url("{{"/assets/images/time.jpg"|relative_url}}");
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #bg_img_webdesign:after{
@@ -267,9 +282,6 @@ body, html {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
-#time{
-   height: 15em;
 }
 
 #bg_img_webdev:after{
@@ -310,18 +322,23 @@ body, html {
 
 }
 
-#bg_img_time:after{
+#bg_img_about{
+  
+  height: 450px;
+}
+
+#bg_img_about:after{
     content: ' ';
     display: block;
     position: absolute;
     left: 0;
     top: 0;
     width: 100%;
-    height: 100%;
+    height: 600px;
     z-index: -1;
-    opacity: 0.3;
+    opacity: 0.4;
 
-    background-image: url("{{"/assets/images/time.jpg"|relative_url}}");
+    background-image: url("{{"/assets/images/beach-love.jpg"|relative_url}}");
 
     /* Center and scale the image nicely */
     background-position: center;
