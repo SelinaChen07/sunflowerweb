@@ -2,7 +2,7 @@
   {% if page.layout == 'service' or page.title == 'About' %}
 	<section class="p-5 bg_orange text-center ">
 		<h3 class="font-weight-bold font-italic text-white">We are looking forward to working with you. </h3>
-	    <p>To see more details of our pricing, please go to <a href="{{"/packages" | relative_url }}" class="text-success font-weight-bold">Our Packages</a>.</p>
+	    <p>To see more details of our offers, please go to <a href="{{"/pricing" | relative_url }}" class="text-success font-weight-bold">Pricing</a>.</p>
     </section>
   {% endif %}
 
@@ -62,7 +62,7 @@
 
 
 
-	<section class="navbar bg-dark text-white">
+	<section class="navbar bg-dark text-white {% if page.title == 'Form Submitted' or page.title == 'Error' %} fixed-bottom {% endif %} ">
 		
 			<small id="copyright">&copy;Copyright | {{ site.title}} All rights reserved. </small>
 	</section>
