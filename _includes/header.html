@@ -21,7 +21,7 @@
 				<ul class="navbar-nav  mr-lg-5 pr-lg-5 mr-3 ml-3 pl-3 ">
 					<li class="nav-item"><a hreflang="en" class="nav-link text-dark  pl-2{% if page.location == 'home' %} font-weight-bold bg-warning rounded {% endif %}" href="{{"/" | relative_url }}">HOME</a></li>					
 					<li class="nav-item dropdown">
-						<a hreflang="en" class="nav-link dropdown-toggle text-dark  pl-2 {% if page.layout == 'service' %} font-weight-bold bg-warning rounded {% endif %}" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">SERVICES</a>
+						<a hreflang="en" class="nav-link dropdown-toggle text-dark  pl-2 {% if page.group == 'service' %} font-weight-bold bg-warning rounded {% endif %}" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">SERVICES</a>
 					    <div class="dropdown-menu">
 					    	{% for service in site.data.services %}
 					    		 <a hreflang="en" class="dropdown-item overflow_wrap border" href="{{service.permalink | relative_url }}">{{service.linkname}}</a>
