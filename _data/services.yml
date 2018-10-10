@@ -1,9 +1,4 @@
-- capitalname: "SEARCH ENGINE OPTIMISATION"
-  icon: build
-  linkname: Search Engine Optiomisation
-  permalink: /services/search-engine-optimisation-seo-service-guide
-  shortdes: TP Roofing installs new tiled roofs of any size or scope Sydney wide. Handpicked by Monier Roofing to join their elite team of Roofing specialists enables us to offer you Monier terracotta and concrete tiles at competitive prices...
-    
+  
 - capitalname: "WEB DESIGN"
   icon: hammer
   linkname: Web Design
@@ -13,14 +8,21 @@
 - capitalname: "WEB DEVELOPMENT"
   icon: color-wand
   linkname: Web Devlopment
-  permalink: /services/how-to-choose-the-right-web-developer
+  permalink: /services/web-development
   shortdes: TP Roofing will replace your roof with the minimum of inconvenience, we excel at liaising with our clients and running our crews efficiently delivering a finished product that enhances your home and protects your most valuable asset...
+
+  
+- capitalname: "SEARCH ENGINE OPTIMISATION"
+  icon: build
+  linkname: Search Engine Optiomisation
+  permalink: /services/search-engine-optimisation-seo-service-guide
+  shortdes: TP Roofing installs new tiled roofs of any size or scope Sydney wide. Handpicked by Monier Roofing to join their elite team of Roofing specialists enables us to offer you Monier terracotta and concrete tiles at competitive prices...
+
 
 - capitalname: "HOSTING AND MAINTENANCE"
   icon: build
   linkname: Website Hosting and Maintenance
   permalink: /services/website-hosting-and-maintenance-service
   shortdes: TP Roofing installs new tiled roofs of any size or scope Sydney wide. Handpicked by Monier Roofing to join their elite team of Roofing specialists enables us to offer you Monier terracotta and concrete tiles at competitive prices...
-    
 
 

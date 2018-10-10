@@ -3,7 +3,7 @@ title: "Services"
 layout: "wrapper"
 ---
 
-
+<div class="container">
 
 <div class="main_content">
    {{content}}
@@ -37,4 +37,6 @@ layout: "wrapper"
         <li class="border-top p-2"><a hreflang="en" href="{{service.permalink | relative_url }}" class="text-success {% if page.permalink == service.permalink %} font-weight-bold disabled_link {% endif %}">{{service.linkname}}</a></li>
       {% endfor %}         
     </ol> 
+</div>
+
 </div>

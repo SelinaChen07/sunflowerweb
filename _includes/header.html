@@ -55,4 +55,21 @@
 	</nav>
 	<div class="h_1 bg_gradient"></div>
 
+
+	{% if page.group == 'service' %}
+	<nav class="d-none d-md-block navbar navbar-light navbar-expand px-0 py-0 mb-0 bg-light">
+			<!-- Services Navbar links -->
+	  		<div class="justify-content-start">
+				<ul class="navbar-nav  mr-lg-5 pr-lg-5 mr-3 ml-3 pl-3 ">
+					{% for service in site.data.services %}
+						<li class="nav-item px-4">
+							<a hreflang="en" class="nav-link text-dark  pl-2 {% if page.linkname == service.linkname %} font-weight-bold {% endif %}" href="{{service.permalink | relative_url }}">{{service.linkname}}</a>
+						</li>
+					{% endfor %}
+				</ul>
+			</div>
+	</nav>
+{% endif %}
+
 </header>
+

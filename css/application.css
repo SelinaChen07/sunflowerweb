@@ -7,6 +7,10 @@ body{
   padding-top: 4.5em;
 }
 
+.font_work{
+  font-family: 'Work Sans', sans-serif;
+}
+
 .pt_space{
   padding-top: 4em;
 }
@@ -178,6 +182,22 @@ body, html {
 
 .bg_dark_transparent{
   background-color: rgb(52,58,64, 0.3);
+}
+
+.bg_pane{
+  background-color: #fdf8f2;
+}
+
+.bg_rose{
+  background-color: #FFE4E1;
+}
+
+.bg_cyan{
+  background-color: #E0FFFF;
+}
+
+.bg_lavendar{
+  background-color: #E6E6FA;
 }
 
 .icon_home_service{
